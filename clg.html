@@ -10,15 +10,16 @@
       margin: 0;
       background-color: #f4f4f4;
     }
+    /* Navigation Bar */
     nav {
       background-color: #333;
-      padding: 10px;
+      padding: 10px 0;
       position: sticky;
       top: 0;
       z-index: 100;
     }
     nav ul {
-      list-style: none;
+      list-style-type: none; /* Removes bullet points */
       margin: 0;
       padding: 0;
       display: flex;
@@ -32,6 +33,10 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Section Styling */
     section {
       background-color: #fff;
       margin: 20px auto;
@@ -45,7 +50,7 @@
       color: #333;
     }
     p, ul, table {
-      margin: 0 0 20px 0;
+      margin-bottom: 20px;
       line-height: 1.6;
     }
     table {
@@ -64,6 +69,7 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Bar using an Unordered List -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -72,16 +78,20 @@
       <li><a href="#faculty">Faculty</a></li>
     </ul>
   </nav>
+
+  <!-- About Section -->
   <section id="about">
     <h2>About St. George's College, Aruvithura</h2>
     <p>
       Established in 1965 and affiliated to Mahatma Gandhi University, Kottayam, 
       St. George's College, Aruvithura is a prestigious institution committed to 
       academic excellence and holistic student development. Nestled in a serene, 
-      green campus, our college offers a vibrant learning environment where 
-      values and knowledge meet.
+      green campus, our college provides an environment where knowledge and values 
+      go hand in hand.
     </p>
   </section>
+
+  <!-- Departments Section -->
   <section id="departments">
     <h2>Departments</h2>
     <table>
@@ -111,6 +121,8 @@
       </tr>
     </table>
   </section>
+
+  <!-- Courses Section -->
   <section id="courses">
     <h2>Courses Offered</h2>
     <ul>
@@ -119,6 +131,8 @@
       <li><strong>Integrated Programs:</strong> MA Programme in Languages (English)</li>
     </ul>
   </section>
+
+  <!-- Faculty Section -->
   <section id="faculty">
     <h2>Faculty</h2>
     <table>
